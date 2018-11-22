@@ -22,13 +22,15 @@ import android.widget.TextView;
 
 import com.synnapps.carouselview.ImageListener;
 
+import android.R.*;
+
 public class MainActivity extends AppCompatActivity {
 
     Tab1Fragment carouselView;
 
     private ViewPager mViewPager;
 
-    int[] sampleImages = {R.drawable.MasterenPreparacionFisica1, R.drawable.GradoMedio2, R.drawable.GradoSuperior3, R.drawable.PasantiaEntrenador4, R.drawable.PasantiaJugador5, R.drawable.MasterEnEntrenadorDePorterosDeFutbol6, R.drawable.MasterEnProfesionalDelFutbol7};
+    //int[] sampleImages = {R.drawable.MasterenPreparacionFisica1, R.drawable.GradoMedio2, R.drawable.GradoSuperior3, R.drawable.PasantiaEntrenador4, R.drawable.PasantiaJugador5, R.drawable.MasterEnEntrenadorDePorterosDeFutbol6, R.drawable.MasterEnProfesionalDelFutbol7};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView mTitle = (TextView) toolbar.findViewById(R.id.Ofertas);
         setSupportActionBar(toolbar);
 
         //carouselView = (carouselView) findViewById(R.id.carouselView);
@@ -71,12 +72,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    ImageListener imageListener = new ImageListener() {
+    /*ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
             imageView.setImageResource(sampleImages[position]);
         }
-    };
+    };*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -129,14 +130,14 @@ public class MainActivity extends AppCompatActivity {
             return fragment;
         }
 
-        @Override
+        /*@Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
-        }
+        }*/
     }
 
     /**
