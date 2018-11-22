@@ -7,12 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Tab1Fragment extends Fragment {
+public class Tab2Fragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.tab1_fragment, container, false);
+        View view = inflater.inflate(R.layout.tab2_fragment, container, false);
 
         return view;
     }
